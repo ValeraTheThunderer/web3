@@ -51,7 +51,38 @@
             <li title="третий"><a href="./about/about.html">ссылка в списке 3</a></li>
         </ol></li>
         <li><a href="ftp://demo:demo@http://demo.wftpserver.com/main.html/download/Summer.jpg">ftp файл</a></li>
-        <li><a href="elements/form.html">форма</a></li>
+        <form method="post" action="/" class="forms front-block">
+                    <a id="form"></a>
+                    <br><strong>Как вас зовут?</strong></br>
+                    <input maxlength="25" size="40">
+                    <p>Email: <input type="email" name="login" required></p>
+                    <p>дата рождения <input type="date" id="start" name="trip-start" required></p>
+                    <p>выберите пол</p>
+                    <p><input name="мужской" type="radio" value="мужской" >мужской</p>
+                    <p><input name="женский" type="radio" value="женский" >женский</p>
+
+
+                    <p>Какой ваш любимый язык программирования?</p>
+                    <p><select name="select" size="5" multiple>
+                        <option selected value="1">C++</option>
+                        <option value="2">PHP</option>
+                        <option value="3">Pascal</option>
+                        <option value="4">C#</option>
+                        <option value="5">C</option>
+
+                    </select>
+
+                    <p> О себе:</p>
+                    <p><textarea name="биография"></textarea></p>
+
+
+                    <p><input type="checkbox" name="1" value="с контрактом ознакомлен(а)" required>с контрактом ознакомлен(а)</p>
+                    <p>
+                        <input type="submit" value="Отправить" required></p>
+                    </p>
+
+
+                </form>
     </ol>
     <table class="first-table">
         <caption>Меню ресторана "Ромашка"</caption>
